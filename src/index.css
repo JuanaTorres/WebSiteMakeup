@@ -1,0 +1,120 @@
+:root {
+  /* Paleta de marca */
+  --marfil: #F8F5F2;
+  --beige-calido: #E8DDD4;
+  --nude-rosado: #D9B8A8;
+  --taupe: #A89282;
+  --cafe-chocolate: #3D302C;
+  --dorado-suave: #C9A46A;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  --max-width: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--cafe-chocolate);
+  background: var(--marfil);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dorado-suave);
+  font-weight: 600;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--nude-rosado);
+  color: var(--cafe-chocolate);
+}
+.btn-primary:hover {
+  background: var(--dorado-suave);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--cafe-chocolate);
+  color: var(--cafe-chocolate);
+}
+.btn-outline:hover {
+  background: var(--cafe-chocolate);
+  color: var(--marfil);
+}
+
+.btn-light {
+  background: transparent;
+  border: 1px solid var(--marfil);
+  color: var(--marfil);
+}
+.btn-light:hover {
+  background: var(--marfil);
+  color: var(--cafe-chocolate);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+}
