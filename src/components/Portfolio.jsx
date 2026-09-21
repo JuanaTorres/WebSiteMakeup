@@ -6,7 +6,7 @@ const ITEMS = [
   { file: '/images/testimonials/9.png', label: 'Social' },
   { file: '/images/testimonials/6.jpg', label: '15 años' },
   { file: '/images/testimonials/7.png', label: 'Pieles maduras' },
-  { file: '/images/testimonials/5.png', label: 'Hallowen' },
+  { file: '/images/testimonials/5.png', label: 'Maquillaje artístico' },
 ]
 
 export default function Portfolio() {
